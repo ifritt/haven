@@ -1,0 +1,6 @@
+
+@font-face {
+    font-family: 'futura';
+    src: url('fonts/futuralight.ttf') format('truetype'),
+         url('fonts/futuralight.woff') format('woff');
+}
