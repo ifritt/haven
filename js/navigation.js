@@ -20,9 +20,7 @@ class NavObject{
         /*main navobject*/
         let mainbutton=document.createElement('div');mainbutton.innerText=this.title;
         mainbutton.classList.add('navObject');
-        $(mainbutton).css('height', height+'%');
-        $(mainbutton).css('left',x+'%');
-        $(mainbutton).css('top',y+'%');
+        mainbutton.setAttribute('style','height:'+height+'%;left:'+x+'%;top:'+y+'%;');
         parentElement.appendChild(mainbutton);
         let menuops=[];
         if(items.length>0){
@@ -38,13 +36,11 @@ class NavObject{
         if(this.href!=''){$(mainbutton).click(function(){window.location.href=href;});}
         $(mainbutton).hover(function(){
             /*make all menuoptions interactable, and visible.*/
-            $(mainbutton).css('height', (max+1)*height+'%');
-            $(mainbutton).css('color', '#aaa');
+            $(mainbutton).css('height', (max+1)*height+'%');$(mainbutton).css('color', '#aaa');
             for(let i=0;i<menuops.length;i++){
                 /*make all menuoptions interactable, and visible.*/
                 const target=menuops[i];
-                target.style.opacity=1;
-                target.style.top=y+(height*i)+height+'%';
+                target.style.opacity=1;target.style.top=y+(height*i)+height+'%';
                 $(target).css('pointer-events', 'all');
             }
         },function(){

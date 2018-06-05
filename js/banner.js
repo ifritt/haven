@@ -16,7 +16,6 @@ class Banner{
         /*maximum size*/
         const maxwidth=document.body.clientWidth;
         const bannerdiv=document.getElementById('banner');
-        console.log(bannerdiv.offsetWidth);
         /*center it*/
         // bannerdiv.style.left=bannerdiv.offsetWidth/2+'px';
         bannerdiv.style.left='0px';
@@ -29,13 +28,7 @@ class Banner{
                 const image=new Image();
                 image.src=images[i];
                 img.src=images[i];
-                img.style.position='absolute';
-                img.style.top=yoffset[i];
-                img.style.minWidth='100%';
-                img.style.maxWidth='100%';
-                img.style.minHeight='auto';
-                img.style.maxHeight='auto';
-                img.style.opacity='1';
+                img.setAttribute('style', 'position:absolute;top:'+yoffset[i]+';min-width:100%;max-width:100%;min-height:auto;max-height:auto;opacity:1;transition:opacity 1s;')
                 img.style.transition='opacity 1s';
                 img.setAttribute('index', i);
                 bannerdiv.appendChild(img);

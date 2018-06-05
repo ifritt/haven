@@ -33,7 +33,7 @@ body{
 }
 .banner{
     position:fixed;
-    top:100px;
+    top:10%;
     width:50%;
     height:50%;
     overflow:hidden;
