@@ -89,7 +89,8 @@ $(document).ready(function() {
         44+xoff, 50+yoff).create(nav);
     const art=new NavObject('PROJECTS','',[
         new MenuObject('art'), 
-        new MenuObject('games', 'games'), 
-        new MenuObject('saboteur', 'saboteur')],
+        new MenuObject('games', 'games')
+        // ,new MenuObject('saboteur', 'saboteur')
+    ],
     50+xoff, 50+yoff).create(nav);
 });

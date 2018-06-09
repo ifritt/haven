@@ -36,4 +36,8 @@ app.use('/', index);
 app.use('/art', art);
 app.use('/games', games);
 
+setInterval(function() {
+    http.get("http://ifritt.herokuapp.com");
+}, 300000 * 5); // every 5 minutes (300000)
+
 module.exports=app;
