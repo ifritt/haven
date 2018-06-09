@@ -1,0 +1,34 @@
+{
+  "name": "haven",
+  "version": "1.0.0",
+  "description": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "ejs": "^2.6.1",
+    "html": "^1.0.0",
+    "socket.io": "^2.1.1"
+  },
+  "engines":{
+    "node": "10.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifritt/haven.git"
+  },
+  "keywords": [
+    "haven"
+  ],
+  "author": "ifrit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ifritt/haven/issues"
+  },
+  "homepage": "https://github.com/ifritt/haven#readme"
+}

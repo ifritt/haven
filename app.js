@@ -19,10 +19,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-var port=8080;
+var port = process.env.PORT || 3000;
 app.set('port',port);
 /*listen to port*/
-server.listen(port,()=>console.log('server running.'));
+// server.listen(port,()=>console.log('server running.'));
+server.listen(port,function(){console.log('haven running.')});
 
 /*socket io*/
 // let socketio=require('socket.io');
