@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 app.set('port',port);
 /*listen to port*/
 // server.listen(port,()=>console.log('server running.'));
@@ -35,9 +35,5 @@ app.use(express.static(__dirname))
 app.use('/', index);
 app.use('/art', art);
 app.use('/games', games);
-
-setInterval(function() {
-    http.get("http://ifritt.herokuapp.com");
-}, 300000 * 5); // every 5 minutes (300000)
 
 module.exports=app;
