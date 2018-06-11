@@ -6,16 +6,16 @@ let cookieParser=require('cookie-parser');
 let express=require('express');
 
 /*routes*/
-let index=require('./routes/index');
-let art=require('./routes/art');
-let games=require('./routes/games');
+let index=require('./route/index');
+let art=require('./route/art');
+let games=require('./route/games');
 
 /*express*/
 let app=express();
 /*create server*/
 let server=http.createServer(app);
 /*view engine setup*/
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'html'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
