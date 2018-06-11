@@ -16,7 +16,6 @@ class Banner{
         /*maximum size*/
         const maxwidth=document.body.clientWidth;
         const bannerdiv=document.getElementById('banner');
-        /*center it*/
         // bannerdiv.style.left=bannerdiv.offsetWidth/2+'px';
         bannerdiv.style.left='0px';
         bannerdiv.style.width='100%';
@@ -60,9 +59,9 @@ class Banner{
 $(document).ready(function(){
     /*relation to index.html*/
     const imgs=[
-        '../public/img/0.png',
-        '../public/img/1.jpg',
-        '../public/img/2.jpg'
+        '../resources/img/0.png',
+        '../resources/img/1.jpg',
+        '../resources/img/2.jpg'
     ];
     const yoffset=[
         '-120%',
