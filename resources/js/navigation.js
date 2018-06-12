@@ -135,7 +135,7 @@ $(document).ready(function() {
     13+xoff, 20+yoff).render(nav);
     const contact=new MenuOption('CONTACT','',[
             new SubOption('twitter', 'https://twitter.com/ifrite3'), 
-            new SubOption('soundcloud')], 
+            new SubOption('soundcloud', 'https://soundcloud.com/cuteanimegrill')], 
         3+xoff, 20+yoff).render(nav);
 
 });

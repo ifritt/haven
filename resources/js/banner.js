@@ -57,7 +57,7 @@ class Banner{
 
 $(document).ready(function(){
     /*relation to index.html*/
-    const imgs=['../resources/img/0.png','../resources/img/1.jpg','../resources/img/2.jpg'];
-    const yoffset=['-265%','-265%','-245%']
+    const imgs=['../resources/img/1.jpg','../resources/img/2.jpg','../resources/img/0.png'];
+    const yoffset=['-265%','-245%','-265%']
     const bannerObject=new Banner(imgs,yoffset).create();
 });
