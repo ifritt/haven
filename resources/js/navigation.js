@@ -127,14 +127,15 @@ $(document).ready(function() {
     const xoff=-1,yoff=0;
     /* init nav bar*/
     const nav=document.getElementById('nav'); 
-    const home=new MenuOption('HOME',"/",[],3+xoff,20+yoff).render(nav);
-    const contact=new MenuOption('CONTACT','',[
-            new SubOption('twitter', 'https://twitter.com/ifrite3'), 
-            new SubOption('soundcloud')], 
-        10+xoff, 20+yoff).render(nav);
+    const home=new MenuOption('HOME',"/",[],23+xoff,20+yoff).render(nav);
     const art=new MenuOption('PROJECTS','',[
         new SubOption('art'), 
         new SubOption('games', 'games')
     ],
-    20+xoff, 20+yoff).render(nav);
+    13+xoff, 20+yoff).render(nav);
+    const contact=new MenuOption('CONTACT','',[
+            new SubOption('twitter', 'https://twitter.com/ifrite3'), 
+            new SubOption('soundcloud')], 
+        3+xoff, 20+yoff).render(nav);
+
 });
