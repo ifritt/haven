@@ -1,8 +1,7 @@
 
 class Banner{
-    constructor(images=[],links=[],yoffset=[]){
+    constructor(images=[],yoffset=[]){
         this.images=images;
-        this.links=links;
         this.yoffset=yoffset
         this.delayms=4000;
     }
@@ -58,18 +57,7 @@ class Banner{
 
 $(document).ready(function(){
     /*relation to index.html*/
-    const imgs=[
-        '../resources/img/0.png',
-        '../resources/img/1.jpg',
-        '../resources/img/2.jpg'
-    ];
-    const yoffset=[
-        '-120%',
-        '-120%',
-        '-120%'
-    ]
-    const urls=[
-        'https://www.sfdept.tokyo/'
-    ];
-    const bannerObject=new Banner(imgs,urls,yoffset).create();
+    const imgs=['../resources/img/0.png','../resources/img/1.jpg','../resources/img/2.jpg'];
+    const yoffset=['-265%','-265%','-245%']
+    const bannerObject=new Banner(imgs,yoffset).create();
 });

@@ -2,7 +2,7 @@
 
 let http=require('http');
 let path=require('path');
-let cookieParser=require('cookie-parser');
+// let cookieParser=require('cookie-parser');
 let express=require('express');
 
 /*routes*/
