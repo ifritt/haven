@@ -1,0 +1,130 @@
+@import url("fonts.css");
+
+html {
+    font-size: 65%;
+}
+
+body{
+    font-size:1rem;
+    /* background: #24292e; */
+    background: white;
+    font-family: quicksand_book;
+}
+#nav{
+    position:absolute;
+}
+
+.menuoption{
+    position:fixed;
+    cursor:default;
+    color:#999;
+    font-size:2rem;
+    display:inline-block;
+    transition:color 0.2s;
+    overflow:hidden;
+    z-index: 100;
+
+    user-select: none;
+}
+.suboption{
+    position:fixed;
+    color:#999;
+    transition:opacity 1s;
+    font-size:1.2rem;
+    font-weight: 700;
+    z-index: inherit;
+    
+    user-select: none;
+}
+.suboption:hover{
+    color:#111;
+}
+.banner{
+    position:fixed;
+    top:3rem;
+    height:15rem;
+    overflow:hidden;
+    left: 0px;
+    width: 100%;
+}
+
+.fader{
+    position: fixed;
+    top:0px;
+    width:100%;
+    height:100%;
+    left:0%;
+    opacity:0;
+    background: #24292e;
+}
+.content-wrapper{
+    position: absolute;
+    /* background: #1c2024;  */
+    left: -5px;
+    height: 500px;
+    right: -200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.content{
+    position: absolute;
+    overflow: hidden;
+    top: 230px;
+    left: 20px;
+    width: 600px;
+    height: 500px;
+}
+
+/*
+ *  Entry related classes
+ */
+
+.entry{ /* container */
+    position: relative;
+    background: #303841;
+    font-size: 18px;
+    font-family: futura;
+    margin: 25px;
+    margin-right: 200px;
+    border-radius: 3px;
+
+    overflow:hidden;
+    max-height: 300px;
+}
+.entrycolor{
+    position: absolute;
+    background: #d4d4d4;
+    width: 100%;
+    height: 10px;
+    top: 0px;
+
+}
+.entrytitle{
+    /* background: #1c2024; */
+    position: relative;
+    color: #ccc;
+    font-size: 1.5em;
+    height: 1em;
+    padding: 10px;
+    top: 8px;
+}
+.entrydate{
+    position: relative;
+    font-size: 1rem;
+    display: inline-block;
+    color: #aaa;
+}
+.entrycontent{
+    position: relative;
+    color: #eee;
+    padding: 10px;
+    padding-bottom: 20px;
+    font-size: 1em;
+}
+.entrymenu{
+    position: absolute;
+    /* background: #1c2024; */
+    width: 100%;
+    height: 12px;
+    bottom: 0px;
+}

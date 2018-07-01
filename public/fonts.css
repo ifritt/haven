@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family:'futura';
+    src:url('./fonts/futuralight.ttf') format('truetype'),
+        url('./fonts/futuralight.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'basictitle';
+    src: url('./fonts/basictitle/basictitlefont.ttf') format('ttf'),
+         url('./fonts/basictitle/basictitlefont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'couture';
+    src: url('./fonts/couture/couture.otf') format('otf'),
+         url('./fonts/couture/couture.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'quicksand_book';
+    src: url('./fonts/quicksand/quicksand_book.otf') format('otf'),
+         url('./fonts/quicksand/quicksand_book.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'quicksand_light';
+    src: url('./fonts/quicksand/quicksand_light.otf') format('otf'),
+         url('./fonts/quicksand/quicksand_light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'neou';
+    src: url('./fonts/neou/neou.ttf') format('ttf'),
+         url('./fonts/neou/neou.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'roundedelegance';
+    src: url('./fonts/roundedelegance/rounded_elegance.ttf') format('ttf'),
+         url('./fonts/roundedelegance/rounded_elegance.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'corals';
+    src: url('./fonts/corals/corals.otf') format('otf'),
+         url('./fonts/corals/corals.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'sfdept';
+    src: url('./fonts/sfdept.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'simplifica';
+    src: url('./fonts/simplifica.ttf') format('ttf'),
+         url('./fonts/simplifica.woff') format('woff');
+}
